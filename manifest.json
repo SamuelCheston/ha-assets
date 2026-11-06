@@ -1,0 +1,869 @@
+{
+  "name": "ha-assets",
+  "version": "1.0.0",
+  "description": "Minecraft 竞技对局平台 SVG 视觉素材库：MatchCoreArena-Client 与 SamuelClient 共用。纯矢量、单强调色扁平几何风。",
+  "consumers": [
+    "MatchCoreArena-Client",
+    "SamuelClient"
+  ],
+  "style": {
+    "accent": "#e94560",
+    "semantic": {
+      "ok": "#4caf50",
+      "warn": "#f59e0b",
+      "danger": "#ef5350",
+      "info": "#3b82f6"
+    },
+    "backgrounds": {
+      "base": "#0a0c10",
+      "panel": "#10141a",
+      "raised": "#171d26"
+    },
+    "strokeWidth": {
+      "icon": 2,
+      "illustration": 1.5
+    },
+    "cssVars": {
+      "--ha-accent": "#e94560",
+      "--ha-ok": "#4caf50",
+      "--ha-warn": "#f59e0b",
+      "--ha-danger": "#ef5350",
+      "--ha-info": "#3b82f6",
+      "--ha-base": "#0a0c10",
+      "--ha-panel": "#10141a",
+      "--ha-raised": "#171d26",
+      "--ha-edge": "#232b37",
+      "--ha-ink": "#e9edf3",
+      "--ha-ink-muted": "#96a1b3",
+      "--ha-ink-faint": "#5c6879"
+    },
+    "rules": [
+      "无渐变 / 无玻璃拟态 / 无写实插画 / 无 3D / 无阴影",
+      "线宽：图标 2px，插画与徽章 1.5px",
+      "着色仅 currentColor 与 var(--ha-*)（均带回退值）",
+      "全部带 viewBox，无内联 style，无外链字体"
+    ]
+  },
+  "groups": {
+    "icons": "icons/ — 导航与动作图标（24 网格，16/24/32 变体）",
+    "states": "states/ — 空状态与错误插画（240×160）",
+    "flow": "flow/ — 对局流阶段图形（Stepper 节点）",
+    "tiers": "tiers/ — 段位徽章（160×160，纯装饰递进）",
+    "modes": "modes/ — 玩法规模与占位符（24 网格）",
+    "patterns": "patterns/ — 低透明度背景纹理（平铺单元）",
+    "brand": "brand/ — 应用标记（160×160）"
+  },
+  "assets": [
+    {
+      "id": "icon-cancel",
+      "group": "icons",
+      "usage": "取消排队 / 关闭 / 放弃",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/cancel-16.svg",
+        "24": "icons/cancel.svg",
+        "32": "icons/cancel-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-career-history",
+      "group": "icons",
+      "usage": "导航：生涯 / 历史记录",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/career-history-16.svg",
+        "24": "icons/career-history.svg",
+        "32": "icons/career-history-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-check",
+      "group": "icons",
+      "usage": "成功 / 完成 / 已选择",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/check-16.svg",
+        "24": "icons/check.svg",
+        "32": "icons/check-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-copy",
+      "group": "icons",
+      "usage": "复制文本或 ID",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/copy-16.svg",
+        "24": "icons/copy.svg",
+        "32": "icons/copy-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-download",
+      "group": "icons",
+      "usage": "下载版本 / 资源",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/download-16.svg",
+        "24": "icons/download.svg",
+        "32": "icons/download-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-external",
+      "group": "icons",
+      "usage": "外部链接",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/external-16.svg",
+        "24": "icons/external.svg",
+        "32": "icons/external-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-friends",
+      "group": "icons",
+      "usage": "导航：好友",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/friends-16.svg",
+        "24": "icons/friends.svg",
+        "32": "icons/friends-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-launch",
+      "group": "icons",
+      "usage": "启动游戏（SamuelClient 主操作）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/launch-16.svg",
+        "24": "icons/launch.svg",
+        "32": "icons/launch-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-loader",
+      "group": "icons",
+      "usage": "加载中指示（可叠加旋转动画）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/loader-16.svg",
+        "24": "icons/loader.svg",
+        "32": "icons/loader-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-login",
+      "group": "icons",
+      "usage": "登录动作",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/login-16.svg",
+        "24": "icons/login.svg",
+        "32": "icons/login-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-play",
+      "group": "icons",
+      "usage": "主操作：开始对局 / 进入游戏",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/play-16.svg",
+        "24": "icons/play.svg",
+        "32": "icons/play-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-queue",
+      "group": "icons",
+      "usage": "排队等待 / 匹配进行中",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/queue-16.svg",
+        "24": "icons/queue.svg",
+        "32": "icons/queue-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-rankings",
+      "group": "icons",
+      "usage": "导航：排行榜",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/rankings-16.svg",
+        "24": "icons/rankings.svg",
+        "32": "icons/rankings-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-refresh",
+      "group": "icons",
+      "usage": "刷新 / 重试",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/refresh-16.svg",
+        "24": "icons/refresh.svg",
+        "32": "icons/refresh-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-settings",
+      "group": "icons",
+      "usage": "导航 / 动作：设置（滑块形态）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/settings-16.svg",
+        "24": "icons/settings.svg",
+        "32": "icons/settings-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-version",
+      "group": "icons",
+      "usage": "版本 / 包管理",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/version-16.svg",
+        "24": "icons/version.svg",
+        "32": "icons/version-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "icon-warning",
+      "group": "icons",
+      "usage": "警告提示",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "icons/warning-16.svg",
+        "24": "icons/warning.svg",
+        "32": "icons/warning-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "state-network-failure",
+      "group": "states",
+      "usage": "错误状态：网络请求失败 / 离线",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "slash": "--ha-danger"
+      },
+      "file": "states/network-failure.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-no-friends",
+      "group": "states",
+      "usage": "空状态：好友列表为空",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "plus": "--ha-accent"
+      },
+      "file": "states/no-friends.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-no-handoff",
+      "group": "states",
+      "usage": "空状态：没有待处理的交接会话",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "dot": "--ha-accent"
+      },
+      "file": "states/no-handoff.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-no-installed-version",
+      "group": "states",
+      "usage": "空状态：没有已安装的游戏版本",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "arrow": "--ha-accent"
+      },
+      "file": "states/no-installed-version.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-no-match-record",
+      "group": "states",
+      "usage": "空状态：暂无对局战绩",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "dot": "--ha-accent"
+      },
+      "file": "states/no-match-record.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-no-rank",
+      "group": "states",
+      "usage": "空状态：未定级 / 无排名数据",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint"
+      },
+      "file": "states/no-rank.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-not-implemented",
+      "group": "states",
+      "usage": "错误状态：功能未实现（honest 501）",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "wrench": "--ha-warn"
+      },
+      "file": "states/not-implemented.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-not-logged-in",
+      "group": "states",
+      "usage": "状态：未登录 / 凭证失效",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "keyhole": "--ha-warn"
+      },
+      "file": "states/not-logged-in.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "state-nothing-playable",
+      "group": "states",
+      "usage": "空状态：尚无可玩内容（等待内容就绪）",
+      "colorable": {
+        "background": "--ha-panel",
+        "border": "--ha-edge",
+        "primary": "--ha-ink",
+        "secondary": "--ha-ink-muted",
+        "dashed": "--ha-ink-faint",
+        "clock": "--ha-accent"
+      },
+      "file": "states/nothing-playable.svg",
+      "viewBox": "0 0 240 160",
+      "canvas": "240x160"
+    },
+    {
+      "id": "flow-idle",
+      "group": "flow",
+      "usage": "对局流：空闲，未排队（Stepper 节点）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "flow/flow-idle-16.svg",
+        "24": "flow/flow-idle.svg",
+        "32": "flow/flow-idle-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "flow-in-match",
+      "group": "flow",
+      "usage": "对局流：对局进行中（Stepper 节点）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "flow/flow-in-match-16.svg",
+        "24": "flow/flow-in-match.svg",
+        "32": "flow/flow-in-match-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "flow-match-found",
+      "group": "flow",
+      "usage": "对局流：已匹配（Stepper 节点）",
+      "colorable": {
+        "stroke": "currentColor",
+        "center-dot": "--ha-accent"
+      },
+      "files": {
+        "16": "flow/flow-match-found-16.svg",
+        "24": "flow/flow-match-found.svg",
+        "32": "flow/flow-match-found-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "flow-queued",
+      "group": "flow",
+      "usage": "对局流：排队中（Stepper 节点）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "files": {
+        "16": "flow/flow-queued-16.svg",
+        "24": "flow/flow-queued.svg",
+        "32": "flow/flow-queued-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "flow-settled",
+      "group": "flow",
+      "usage": "对局流：已结算（Stepper 节点）",
+      "colorable": {
+        "stroke": "currentColor",
+        "check": "--ha-ok"
+      },
+      "files": {
+        "16": "flow/flow-settled-16.svg",
+        "24": "flow/flow-settled.svg",
+        "32": "flow/flow-settled-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "tier-1",
+      "group": "tiers",
+      "usage": "段位徽章：等级 1（纯装饰，不暗示分数阈值）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "file": "tiers/tier-1.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "tier-2",
+      "group": "tiers",
+      "usage": "段位徽章：等级 2（纯装饰，不暗示分数阈值）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "file": "tiers/tier-2.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "tier-3",
+      "group": "tiers",
+      "usage": "段位徽章：等级 3（纯装饰，不暗示分数阈值）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "file": "tiers/tier-3.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "tier-4",
+      "group": "tiers",
+      "usage": "段位徽章：等级 4（纯装饰，不暗示分数阈值）",
+      "colorable": {
+        "stroke": "currentColor",
+        "gem": "--ha-accent"
+      },
+      "file": "tiers/tier-4.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "tier-5",
+      "group": "tiers",
+      "usage": "段位徽章：等级 5（纯装饰，不暗示分数阈值）",
+      "colorable": {
+        "stroke": "currentColor",
+        "gem": "--ha-accent",
+        "rays": "--ha-ink-muted"
+      },
+      "file": "tiers/tier-5.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "tier-unranked",
+      "group": "tiers",
+      "usage": "段位徽章：未定级（虚线空槽，纯装饰）",
+      "colorable": {
+        "stroke": "currentColor"
+      },
+      "file": "tiers/tier-unranked.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "mode-1v1",
+      "group": "modes",
+      "usage": "玩法：1v1 单挑",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-1v1-16.svg",
+        "24": "modes/mode-1v1.svg",
+        "32": "modes/mode-1v1-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "mode-2v2",
+      "group": "modes",
+      "usage": "玩法：2v2 组队",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-2v2-16.svg",
+        "24": "modes/mode-2v2.svg",
+        "32": "modes/mode-2v2-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "mode-4v4",
+      "group": "modes",
+      "usage": "玩法：4v4 组队",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-4v4-16.svg",
+        "24": "modes/mode-4v4.svg",
+        "32": "modes/mode-4v4-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "mode-avatar",
+      "group": "modes",
+      "usage": "玩家头像占位符",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-avatar-16.svg",
+        "24": "modes/mode-avatar.svg",
+        "32": "modes/mode-avatar-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "mode-ffa",
+      "group": "modes",
+      "usage": "玩法：自由混战（FFA）",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-ffa-16.svg",
+        "24": "modes/mode-ffa.svg",
+        "32": "modes/mode-ffa-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "mode-team",
+      "group": "modes",
+      "usage": "队伍占位符",
+      "colorable": {
+        "stroke": "currentColor",
+        "dots": "currentColor (fill)"
+      },
+      "files": {
+        "16": "modes/mode-team-16.svg",
+        "24": "modes/mode-team.svg",
+        "32": "modes/mode-team-32.svg"
+      },
+      "viewBox": "0 0 24 24",
+      "sizes": [
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "id": "pattern-dots",
+      "group": "patterns",
+      "usage": "背景纹理：点阵（低透明度，可平铺）",
+      "colorable": {
+        "stroke": "currentColor（根 color 属性提供 --ha-ink 回退）"
+      },
+      "file": "patterns/dots.svg",
+      "tile": "16 16",
+      "tiling": "background-repeat: repeat"
+    },
+    {
+      "id": "pattern-geodesic",
+      "group": "patterns",
+      "usage": "背景纹理：测地线三角网格（低透明度，可平铺）",
+      "colorable": {
+        "stroke": "currentColor（根 color 属性提供 --ha-ink 回退）"
+      },
+      "file": "patterns/geodesic.svg",
+      "tile": "48 41.57",
+      "tiling": "background-repeat: repeat"
+    },
+    {
+      "id": "pattern-grid-fine",
+      "group": "patterns",
+      "usage": "背景纹理：细网格（低透明度，可平铺）",
+      "colorable": {
+        "stroke": "currentColor（根 color 属性提供 --ha-ink 回退）"
+      },
+      "file": "patterns/grid-fine.svg",
+      "tile": "24 24",
+      "tiling": "background-repeat: repeat"
+    },
+    {
+      "id": "brand-mca",
+      "group": "brand",
+      "usage": "MatchCoreArena-Client 品牌标记（硬派竞技）",
+      "colorable": {
+        "stroke": "currentColor",
+        "accent": "--ha-accent",
+        "secondary": "--ha-ink-muted"
+      },
+      "file": "brand/mca.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    },
+    {
+      "id": "brand-samuel",
+      "group": "brand",
+      "usage": "SamuelClient 品牌标记（柔和产品感）",
+      "colorable": {
+        "stroke": "currentColor",
+        "accent": "--ha-accent",
+        "secondary": "--ha-ink-muted"
+      },
+      "file": "brand/samuel.svg",
+      "viewBox": "0 0 160 160",
+      "canvas": "160x160"
+    }
+  ]
+}
